@@ -22,3 +22,40 @@ const markup = images
   .join("");
 
 listEl.insertAdjacentHTML("beforeend", markup);
+// let counterValue = 0;
+
+// const refs = {
+//   btnDecrement: document.querySelector("[data-action='decrement']"),
+//   btnIncrement: document.querySelector("[data-action='increment']"),
+//   valueCounter: document.querySelector("#value"),
+// };
+
+// refs.btnDecrement.addEventListener("click", onBtnDecr);
+// refs.btnIncrement.addEventListener("click", onBtnIncr);
+// window.addEventListener("keydown", onKeydownTap);
+
+// // function onBtnDecr() {
+// //   counterValue -= 1;
+// //   refs.valueCounter.innerHTML = counterValue;
+// // }
+
+// // function onBtnIncr() {
+// //   counterValue += 1;
+// //   refs.valueCounter.innerHTML = counterValue;
+// // }
+
+// function onBtnDecr() {
+//   counterValue -= 1;
+//   refs.valueCounter.textContent = counterValue;
+// }
+
+// function onBtnIncr() {
+//   counterValue += 1;
+//   refs.valueCounter.textContent = counterValue;
+// }
+
+// function onKeydownTap(event) {
+//   if (event.code === "Escape") {
+//     refs.valueCounter.innerHTML = "";
+//   }
+// }
