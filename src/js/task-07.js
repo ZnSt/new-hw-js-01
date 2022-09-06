@@ -9,9 +9,14 @@
 //   refs.spanSizeControl.style.fontSize = event.currentTarget.value + "px";
 // }
 
-const parent = document.querySelector("#parent");
+const refs = {
+  input: document.querySelector("#font-size-control"),
+  span: document.querySelector("#text"),
+};
 
-parent.addEventListener("click", (event) => {
-  console.log("event.target: ", event.target);
-  console.log("event.currentTarget: ", event.currentTarget);
-});
+refs.input.addEventListener("input", onInput);
+
+function onInput(event) {
+  console.log(event);
+  refs.span.style.fontSize = `${event.currentTarget.value}px`;
+}

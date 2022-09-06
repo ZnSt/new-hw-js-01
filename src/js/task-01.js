@@ -1,3 +1,5 @@
+//NUMBER1
+
 // const listEl = document.querySelector("#categories");
 // console.log(listEl);
 
@@ -11,6 +13,8 @@
 //   console.log(`Elements: `, newListEl[i].children.length);
 // }
 
+//NUMBER2
+
 // const itemRefs = document.querySelectorAll(".item");
 // console.log("Number of categories: ", itemRefs.length);
 // itemRefs.forEach((element) => {
@@ -19,3 +23,16 @@
 //   const secondItemRefs = element.querySelectorAll("li");
 //   console.log("Elements: ", secondItemRefs.length);
 // });
+
+//NUMBER3
+
+const listRefs = document.querySelector("#categories").children;
+console.log("Number of categories: ", listRefs.length);
+
+[...listRefs].forEach((element) => {
+  const title = element.querySelector("h2").textContent;
+  console.log("Category: ", title);
+
+  const lengthEl = element.querySelectorAll("li").length;
+  console.log("Elements: ", lengthEl);
+});

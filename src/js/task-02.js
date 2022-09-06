@@ -46,3 +46,15 @@ const makeIngredients = (ingredients) => {
 
 const elements = makeIngredients(ingredients);
 listEl.append(...elements);
+
+// 4ВАРИАНТ
+
+// const listRefs = document.querySelector("#ingredients");
+
+// const markup = ingredients
+//   .map((indgredient) => {
+//     return `<li class="item">${indgredient}</li>`;
+//   })
+//   .join("");
+
+// listRefs.insertAdjacentHTML("beforeend", markup);
