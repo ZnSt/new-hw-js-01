@@ -31,13 +31,15 @@ refs.inputRefs.addEventListener("input", onInputBlur);
 function onInputBlur(event) {
   console.dir(event.currentTarget);
 
-  if (event.target.value !== lengthInput) {
-    refs.inputRefs.classList.remove("valid");
-
-    refs.inputRefs.classList.add("invalid");
+  if (event.target.value.length === lengthInput) {
+    updateClassElem("valid", "invalid");
   } else {
-    refs.inputRefs.classList.remove("invalid");
-
-    refs.inputRefs.classList.add("valid");
+    updateClassElem("invalid", "valid");
   }
+}
+
+function updateClassElem(addCl, rmCl) {
+  refs.inputRefs.classList.remove(rmCl);
+
+  refs.inputRefs.classList.add(addCl);
 }

@@ -29,7 +29,7 @@ function onFormSubmit(event) {
   event.preventDefault();
   const { email, password } = event.currentTarget.elements;
   if (!email.value || !password.value) {
-    alert("Please, all forms must be fill!");
+    return alert("Please, all forms must be fill!");
   }
 
   const formData = {
